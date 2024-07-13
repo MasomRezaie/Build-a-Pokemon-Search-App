@@ -245,3 +245,26 @@ td, th {
 .dragon {
   background-color: #b59682;
 }
+
+.steel {
+  background-color: #abaabb;
+}
+
+.fairy {
+  background-color: #ed99ed;
+}
+
+
+@media screen and (min-width: 550px) {
+  .container {
+    width: 450px;
+  }
+
+  #search-form, .top-container, .bottom-container {
+    width: 95%;
+  }
+
+  .type {
+    width: 75px;
+  }
+}
