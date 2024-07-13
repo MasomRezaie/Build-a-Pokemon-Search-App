@@ -129,3 +129,29 @@ body {
   text-transform: capitalize;
   margin-bottom: 3px;
 }
+
+.size {
+  height: 16px;
+  font-size: 0.75rem;
+}
+
+.sprite-container {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-container{
+  height: 300px;
+}
+#sprite-container {
+  width: 180px;
+}
+
+#types {
+  min-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
