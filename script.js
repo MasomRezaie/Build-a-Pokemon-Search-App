@@ -41,3 +41,20 @@ const getPokemon = async () => {
     alert("Pokémon not found");
   }
 };
+
+const resetDisplay = () => {
+  const sprite = document.getElementById("sprite");
+  if (sprite) sprite.remove();
+
+  pokemonName.textContent = '';
+  pokemonID.textContent = '';
+  types.innerHTML = '';
+  height.textContent = '';
+  weight.textContent = '';
+  hp.textContent = '';
+  attack.textContent = '';
+  defense.textContent = '';
+  specialAttack.textContent = '';
+  specialDefense.textContent = '';
+  speed.textContent = '';
+};
