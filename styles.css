@@ -155,3 +155,45 @@ body {
   justify-content: flex-start;
   gap: 5px;
 }
+
+.type {
+  width: 66px;
+  padding: 5px;
+  font-size: 0.7rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #dddee9;
+}
+
+th:nth-child(even),td:nth-child(even) {
+  border-left: 3px solid #197b03;
+}
+
+tr {
+  border-bottom: 3px solid #0a9a03;
+}
+
+td, th {
+  text-align: center;
+  padding: 8px;
+}
+
+.normal {
+  background-color: #b7b7aa;
+}
+
+.fire {
+  background-color: #ff6f52;
+}
+
+.water {
+  background-color: #42a1ff;
+}
