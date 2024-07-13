@@ -58,3 +58,8 @@ const resetDisplay = () => {
   specialDefense.textContent = '';
   speed.textContent = '';
 };
+
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  getPokemon();
+});
