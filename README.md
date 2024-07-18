@@ -1,10 +1,11 @@
 # Build-a-Pokemon-Search-App🚀
->This repository contains a cash register app that  calculates and displays change due to customers based on the price that they give for an item. This documentation serves as a guide for developers, contributors, and users to understand the architecture, implementation details, and usage instructions for the project. This project is built by html, css and Javascript. Trough creating this repository, users will learn the html,css and Javascript that how style and get functions to a webpage.
+>This repository contains a web application for searching Pokémon details by name or ID using the PokéAPI Proxy provided by freeCodeCamp. This documentation serves as a guide for developers, contributors, and users to understand the architecture, implementation details, and usage instructions for the project. This project is built by html, css and Javascript. Trough creating this repository, users will learn the html,css and Javascript that how style and get functions to a webpage.
 
 **How to use this project?**
 To use this project, follow these steps.
-Enter the amount of cash in the input box.
-Click on the "Purchase" button, customer will get an alert if there money is less than 20.
+Enter a Pokémon name or ID to retrieve detailed information.
+Click on the "search" button,
+it will Show Pokémon name, ID, weight, height, types, and stats
 
 **This project is created:**
 HTML
