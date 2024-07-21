@@ -1,17 +1,17 @@
-const searchInput = document.getElementById("search-input");
-const searchForm = document.getElementById("search-form");
-const spriteContainer = document.getElementById("sprite-container");
-const pokemonID = document.getElementById("pokemon-id");
-const pokemonName = document.getElementById("pokemon-name");
-const types = document.getElementById("types");
-const weight = document.getElementById("weight");
-const height = document.getElementById("height");
-const hp = document.getElementById("hp");
-const attack = document.getElementById("attack");
-const defense = document.getElementById("defense");
-const specialAttack = document.getElementById("special-attack");
-const specialDefense = document.getElementById("special-defense");
-const speed = document.getElementById("speed");
+const searchInput = document.getElementById('search-input');
+const searchForm = document.getElementById('search-form');
+const spriteContainer = document.getElementById('sprite-container');
+const pokemonID = document.getElementById('pokemon-id');
+const pokemonName = document.getElementById('pokemon-name');
+const types = document.getElementById('types');
+const weight = document.getElementById('weight');
+const height = document.getElementById('height');
+const hp = document.getElementById('hp');
+const attack = document.getElementById('attack');
+const defense = document.getElementById('defense');
+const specialAttack = document.getElementById('special-attack');
+const specialDefense = document.getElementById('special-defense');
+const speed = document.getElementById('speed');
 
 const getPokemon = async () => {
   try {
@@ -19,7 +19,6 @@ const getPokemon = async () => {
     const response = await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemonNameOrId}`);
     const data = await response.json();
 
- 
     pokemonName.textContent = `${data.name.toUpperCase()}`;
     pokemonID.textContent = `${data.id}`;
     weight.textContent = `Weight: ${data.weight}`;
@@ -36,14 +35,14 @@ const getPokemon = async () => {
 
     types.innerHTML = data.types.map((obj) => `<span class="type ${obj.type.name}">${obj.type.name}</span>`).join('');
 
-  } catch(err) {
+  } catch (err) {
     resetDisplay();
-    alert("Pokémon not found");
+    alert('Pokémon not found');
   }
 };
 
 const resetDisplay = () => {
-  const sprite = document.getElementById("sprite");
+  const sprite = document.getElementById('sprite');
   if (sprite) sprite.remove();
 
   pokemonName.textContent = '';
@@ -59,7 +58,7 @@ const resetDisplay = () => {
   speed.textContent = '';
 };
 
-searchForm.addEventListener("submit", (e) => {
+searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
   getPokemon();
 });
