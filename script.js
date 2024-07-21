@@ -12,7 +12,22 @@ const defense = document.getElementById('defense');
 const specialAttack = document.getElementById('special-attack');
 const specialDefense = document.getElementById('special-defense');
 const speed = document.getElementById('speed');
+const resetDisplay = () => {
+  const sprite = document.getElementById('sprite');
+  if (sprite) sprite.remove();
 
+  pokemonName.textContent = '';
+  pokemonID.textContent = '';
+  types.innerHTML = '';
+  height.textContent = '';
+  weight.textContent = '';
+  hp.textContent = '';
+  attack.textContent = '';
+  defense.textContent = '';
+  specialAttack.textContent = '';
+  specialDefense.textContent = '';
+  speed.textContent = '';
+};
 const getPokemon = async () => {
   try {
     const pokemonNameOrId = searchInput.value.toLowerCase();
@@ -34,29 +49,12 @@ const getPokemon = async () => {
     speed.textContent = data.stats[5].base_stat;
 
     types.innerHTML = data.types.map((obj) => `<span class="type ${obj.type.name}">${obj.type.name}</span>`).join('');
-
   } catch (err) {
     resetDisplay();
     alert('Pokémon not found');
-  }
-};
+  }};
 
-const resetDisplay = () => {
-  const sprite = document.getElementById('sprite');
-  if (sprite) sprite.remove();
 
-  pokemonName.textContent = '';
-  pokemonID.textContent = '';
-  types.innerHTML = '';
-  height.textContent = '';
-  weight.textContent = '';
-  hp.textContent = '';
-  attack.textContent = '';
-  defense.textContent = '';
-  specialAttack.textContent = '';
-  specialDefense.textContent = '';
-  speed.textContent = '';
-};
 
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
