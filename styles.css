@@ -168,6 +168,12 @@ table {
   background-color: #dddee9;
 }
 
+td,
+th {
+  text-align: center;
+  padding: 8px;
+}
+
 th:nth-child(even),
 td:nth-child(even) {
   border-left: 3px solid #197b03;
@@ -175,12 +181,6 @@ td:nth-child(even) {
 
 tr {
   border-bottom: 3px solid #0a9a03;
-}
-
-td,
-th {
-  text-align: center;
-  padding: 8px;
 }
 
 .normal {
