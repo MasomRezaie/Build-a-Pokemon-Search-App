@@ -53,7 +53,7 @@ const getPokemon = async () => {
     resetDisplay();
     alert('Pokémon not found');
   }
- };
+};
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
   getPokemon();
