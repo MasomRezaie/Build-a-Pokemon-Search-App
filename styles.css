@@ -257,7 +257,8 @@ tr {
   }
 
   #search-form,
-  .top-container, 
+  .top-container,
+
   .bottom-container {
     width: 95%;
   }
