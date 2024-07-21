@@ -53,6 +53,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -167,7 +168,8 @@ table {
   background-color: #dddee9;
 }
 
-th:nth-child(even),td:nth-child(even) {
+th:nth-child(even),
+td:nth-child(even) {
   border-left: 3px solid #197b03;
 }
 
@@ -175,7 +177,8 @@ tr {
   border-bottom: 3px solid #0a9a03;
 }
 
-td, th {
+td,
+th {
   text-align: center;
   padding: 8px;
 }
@@ -217,7 +220,7 @@ td, th {
 }
 
 .flying {
-  background-color: #8899ff;
+  background-color: #89f;
 }
 
 .psychic {
@@ -248,13 +251,14 @@ td, th {
   background-color: #ed99ed;
 }
 
-
 @media screen and (min-width: 550px) {
   .container {
     width: 450px;
   }
 
-  #search-form, .top-container, .bottom-container {
+  #search-form,
+  .top-container, 
+  .bottom-container {
     width: 95%;
   }
 
