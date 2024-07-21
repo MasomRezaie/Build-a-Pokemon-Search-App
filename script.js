@@ -52,10 +52,8 @@ const getPokemon = async () => {
   } catch (err) {
     resetDisplay();
     alert('Pokémon not found');
-  }};
-
-
-
+  }
+ };
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
   getPokemon();
